@@ -1,0 +1,210 @@
+/* Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-body {
+	background-color: #1a0f0d;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+		url('images/vvvv.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Inter', sans-serif;
+	color: #ffe5b6;
+}
+
+.logo img {
+	display: block;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 2%;
+	position: absolute;
+	/* Ensures it sits on top of the background image */
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background: transparent; /* Transparent look like Bean Scene */
+}
+
+/* Logo: Script style like 'Bean Scene' */
+.logo a {
+	font-family: 'Updock', cursive;
+	color: #ffe5b6; /* Golden/Coffee tint */
+	font-size: 2.2rem;
+	text-decoration: none;
+}
+
+.nav-container {
+	display: flex;
+	align-items: center;
+} /* Center Links */
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	margin: 0 15px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 0.9rem;
+	transition: 0.3s;
+}
+
+.nav-links a:hover {
+	color: #ffe5b6;
+}
+
+/* Right Side Auth Buttons */
+.nav-auth {
+	display: flex;
+	align-items: center;
+	margin-left: 40px;
+}
+
+.login-link {
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 0.9rem;
+}
+
+/* Highlighted SignUp Button */
+.signup-btn {
+	background-color: #ffe5b6; /* Golden yellow from image */
+	color: #333;
+	padding: 8px 25px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9rem;
+	transition: 0.3s;
+}
+
+.signup-btn:hover {
+	background-color: #ffffff;
+	transform: scale(1.05);
+}
+
+
+
+/* Hero Section */
+.menu-page-container {
+	padding: 160px 5% 50px;
+	text-align: center;
+}
+
+.menu-hero h1 {
+	font-family: 'Updock', cursive;
+	font-size: 2rem;
+	color: white;
+	margin: 5px 0;
+}
+
+.loc-text {
+	letter-spacing: 4px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: #ffe5b6;
+}
+
+.timing-strip {
+	margin-bottom: 50px;
+	font-size: 1.1rem;
+	font-style: italic;
+	color: #d1c4ae;
+}
+
+/* Menu Card */
+.menu-card {
+	background: #F5F0E9; /* Rich Dark Brown */
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 60px;
+	border: 1px solid #3d2b26;
+	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.brand-small {
+	letter-spacing: 4px;
+	font-size: 3rem;
+	color: #231512;
+	font-family: 'Updock', cursive;
+}
+
+.menu-header-main h2 {
+	font-size: 2rem;
+	font-family: 'Times New Roman', Times, serif;
+	color: #7a4236;
+	margin: -10px 0 0px 0;
+}
+
+.divider {
+	height: 2px;
+	width: 100px;
+	background: #7a4236;
+	margin: 2px auto 20px;
+}
+
+/* Grid & Items */
+.menu-grid {
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	text-align: left;
+}
+
+.menu-column {
+	flex: 1;
+}
+
+h3 {
+	color: #731a02;
+	border-bottom: 1px solid #4a1101;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-item {
+	color: #7a4236;
+	display: flex;
+	font-family: 'Times New Roman', Times, serif;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 18px;
+	font-size: 0.8rem;
+}
+
+.item-dots {
+	flex: 1;
+	border-bottom: 1px dotted #5d4037;
+	margin: 0 10px;
+	position: relative;
+	top: -4px;
+}
+
+.item-price {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #231512;
+}
+
+.sub-category {
+	margin-top: 50px;
+}
+
+.menu-footer {
+	margin-top: 50px;
+	font-size: 0.8rem;
+	font-family: 'Times New Roman', Times, serif;
+	color: #8d7b77;
+	border-top: 1px solid #3d2b26;
+	padding-top: 25px;
+	line-height: 1.6;
+}

@@ -1,0 +1,148 @@
+/* Reset and Base Styles */
+* {
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/* Background Container */
+.bg-container {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('images/vvvv.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+.logo img {
+	display: block;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 2%;
+	position: absolute;
+	/* Ensures it sits on top of the background image */
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background: transparent; /* Transparent look like Bean Scene */
+}
+
+
+
+/* Logo: Script style like 'Bean Scene' */
+.logo a {
+	font-family: 'Updock', cursive;
+	color: #ffe5b6; /* Golden/Coffee tint */
+	font-size: 2.2rem;
+	text-decoration: none;
+}
+
+.nav-container {
+	display: flex;
+	align-items: center;
+} /* Center Links */
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	margin: 0 15px;
+	font-size: 0.9rem;
+	transition: 0.3s;
+}
+
+.nav-links a:hover {
+	color: #ffe5b6;
+}
+
+/* Right Side Auth Buttons */
+.nav-auth {
+	display: flex;
+	align-items: center;
+	margin-left: 40px;
+}
+
+.login-link {
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 0.9rem;
+}
+
+/* Highlighted SignUp Button */
+.signup-btn {
+	background-color: #ffe5b6; /* Golden yellow from image */
+	color: #333;
+	padding: 8px 25px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9rem;
+	transition: 0.3s;
+}
+
+.signup-btn:hover {
+	background-color: #ffffff;
+	transform: scale(1.05);
+}
+
+.Code-Coffee {
+	position: absolute;
+	top: 20%; /* Adjust this to move text up/down */
+	left: 10%; /* Adjust this to move text left/right */
+	color: white;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+	font-family: 'Updock', cursive;
+	font-size: 5rem;
+	margin: 0;
+}
+
+.tagline {
+	position: absolute;
+	top: 37%; /* Adjust this to move text up/down */
+	left: 20%; /* Adjust this to move text left/right */
+	color: #ffe5b6;
+	font-family: 'Monterchi Serif', sans-serif;
+	font-size: 0.8rem;
+	letter-spacing: 5px;
+	margin-top: 5px;
+}
+
+/* Button ki position (Tagline ke theek niche) */
+.order-btn {
+	position: absolute;
+	top: 45%;
+	left: 25%;
+	padding: 8px 25px; /* Perfect small-medium size */
+	font-size: 0.75rem;
+	display: inline-block;
+	background-color: #ffffff;
+	color: #333333;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.order-btn:hover {
+	background-color: #f0f0f0;
+	transform: scale(1.03);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
